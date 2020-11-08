@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+		<link rel="shortcut icon" type="image/x-icon" href="images/122.png">
+
+<style>
+input[type=text],
+
+	select
+	{
+		width: 100%;
+	    padding: 10px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border:1px white;
+		border-radius: 4px;
+		box-sizing: border-box;
+
+
+	}
+	input[type=submit]
+	{
+		width: 100%;
+		background-color:#70b7c9;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border:none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	input[type=submit]:hover
+	{
+		background-color: #dd0dc2;
+		font-size: 20px;
+
+	}
+	div
+	{
+		border-radius: 5px;
+		background-color: #70b7c9;
+		padding: 20px; 
+
+	}
+	h1
+	{
+		text-align: center;
+		font-family: sans-serif;
+	font-family: sans-serif;
+	text-transform: capitalize;
+	border: solid;
+    background-color: rgba(0, 0, 0, 0.4);
+	border-style:groove ;
+	position:relative;
+	opacity: 0.7;
+	margin:0;
+	float:center;
+	text-shadow: 20;
+	text-align:bottom;
+	padding-top: 55px;
+	padding-bottom: 55px;
+	   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+font-weight: 400;
+font-size: 70px;
+	}
+	body
+	{
+		background-image: url("appointment.JPG");
+		background-repeat: no-repeat;
+		width: 100%;
+		position: relative;
+		background-size: 100%;
+	}
+</style>
+<body>
+	<h1>
+		Appointment
+	</h1>
+	<div>
+		<form action="/action_page.php">
+			<label for="pname">PATIENT NAME</label>
+			<input type="text" id="pname" name="PATIENT NAME" placeholder="Patient..">
+			<br>
+			<br>
+			<label for="cname">CARE TAKER NAME</label>
+			<input type="text" id="cname" name="Care Taker Name" placeholder="Gaurdian name">
+			<br>
+			<br>
+			<td>
+			GENDER:
+		</td>
+		  <input type="radio" name="Gender">Male
+		  <input type="radio" name="Gender">Female
+		  <input type="radio" name="Gender">Transgender
+		  <br>
+		  <br>
+			
+			<label for="time"> SELECT SLOT TIME</label>
+			<select id="time" name="TIME"> SELECT SLOT TIME>
+				<option value="9:30am to 10:30am">9:30am to 10:30am</option>
+				<option value="11:30am to 12:30pm">11:30am to 12:30pm</option>
+				<option value="1:30pm to 2:3	0pm">1:30pm to 2:30pm</option>
+				<option value="2:30pm to 3:30pm">2:30pm to 3:30pm</option>
+				<br>
+				<br>
+				<br>
+				<br>
+			</select>
+			<label for="blood group">BLOOD GROUP</label>
+			<select id="blood group">BLOOD GROUP>
+				<option value="A+"> A+</option>
+				<option value="A-"> A-</option>
+				<option value="B+"> B+</option>
+				<option value="B-"> B-</option>
+				<option value="O+"> O+</option>
+				<option value="O-"> O-</option>
+				<option value="AB+"> AB+</option>
+				<option value="AB-"> AB-</option>
+				<br>
+				<br>
+
+				
+			</select>
+			<label for="contact number">CONTACT NUMBER</label>
+			<input type="text" id="contact number" name="CONTACT NUMBER"></input>
+				
+			</select>
+			<label for="type">TYPE</label>
+			<select id="type" name="TYPE">
+				<option value="CT scan">CT scan</option>
+				<option value="blood test">Blood Test</option>
+				<option value="X-ray">X-Ray</option>
+				<option value="MRI scan">MRI Scan</option>
+				<option value="physical test">Physical Test</option>
+				<br>
+				<br>
+
+			</select>
+			<label for="reason">Reason For Appointment</label>
+			<input type="text" id="reason" name="Reason For Appointment">
+			<input type="checkbox" name="I agree to the terms and conditions" value="I agree to the terms and conditions">I agree to the terms and conditions<br>
+			<input type="Submit" name="Submit">
+
+		</form>
+	</div>
+</body>
+</html>

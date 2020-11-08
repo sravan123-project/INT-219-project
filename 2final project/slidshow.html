@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+    #main{
+         width:410px;
+	height:310px;
+	position:relative;
+	margin:6% auto;
+	background:red;
+	padding:20px;
+	overflow: hidden;
+	}
+
+
+
+img{
+height:auto;
+width:auto;
+}
+
+
+
+</style>
+</head>
+<body>
+       <div id="main">
+       <img src="images/6.jpg" id="slideimage">
+</div>
+
+<script>
+function first(){
+            document.getElementById("slideimage").src="images/7.jpg";
+             }
+
+function second(){
+            document.getElementById("slideimage").src="images/8.jpg";
+             }
+function third(){
+            document.getElementById("slideimage").src="images/9.jpg";
+}
+
+function fourth(){
+            document.getElementById("slideimage").src="images/6.jpg";
+}
+ 
+
+            setInterval(first,1000);
+            setInterval(second,2000);
+            setInterval(third,3000);
+            setInterval(fourth,4000);
+            
+
+  </script>
+
+
+
+
+</body>
+</html>
